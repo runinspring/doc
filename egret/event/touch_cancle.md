@@ -34,6 +34,7 @@ scroller.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 Scr
 list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List cancle")},this);
 ~~~
 当没有滚动，点击列表后，会依次抛出以下事件。
+
 ![](assevent/touchcancle_1.png)
 ~~~
 111 List Begin
@@ -51,4 +52,5 @@ list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List ca
 44 Scroller cancle
 ~~~
 ![](assevent/touchcancle_2.png)
+
 而且 TouchCancle 触发以后，说明触摸被取消了，本次触摸被选中的选项条也会恢复成选中前的状态。
