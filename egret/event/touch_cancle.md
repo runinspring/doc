@@ -33,9 +33,9 @@ list.addEventListener(egret.TouchEvent.TOUCH_TAP,()=>{console.log("33 List Tap")
 scroller.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 Scroller cancle")},this);
 list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List cancle")},this);
 ~~~
-当没有滚动，点击列表后，会依次抛出以下事件。
+####没有滚动时
 
-![](assevent/touchcancle_1.png)
+当没有滚动，点击列表后，会依次抛出以下事件。
 ~~~
 111 List Begin
 111 Scroller Begin
@@ -44,7 +44,10 @@ list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List ca
 33 List Tap
 33 Scroller Tap
 ~~~
-当你滚动 scroller 以后，会抛出 TouchCancle, 后续的 touch 事件不会被触发。
+![](assevent/touchcancle_1.png)
+上图为点击后的样子
+####滚动后
+当你滚动 scroller 以后，会抛出 TouchCancle，后续的 touch 事件不会被触发。
 ~~~
 111 List Begin
 111 Scroller Begin
@@ -53,4 +56,4 @@ list.addEventListener(egret.TouchEvent.TOUCH_CANCEL,()=>{console.log("44 List ca
 ~~~
 ![](assevent/touchcancle_2.png)
 
-而且 TouchCancle 触发以后，说明触摸被取消了，本次触摸被选中的选项条也会恢复成选中前的状态。
+另外 TouchCancle 触发以后，说明触摸被取消了，本次触摸被选中的选项条也会恢复成选中前的状态。
