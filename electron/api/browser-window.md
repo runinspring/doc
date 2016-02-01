@@ -23,7 +23,7 @@ win.show();
 `BrowserWindow` 是一个
 [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter).
 
-可以通过设置原生属性 `options` ,创建一个新的`BrowserWindow`
+可以通过设置 `options` 属性,创建一个新的`BrowserWindow`
 
 ### `new BrowserWindow([options])`
 
@@ -34,10 +34,8 @@ win.show();
     window.
   * `y` Integer - Window's top offset from screen. Default is to center the
     window.
-  * `useContentSize` Boolean - The `width` and `height` would be used as web
-    page's size, which means the actual window's size will include window
-    frame's size and be slightly larger. Default is `false`.
-  * `center` Boolean - Show window in the center of the screen.
+  * `useContentSize` Boolean - 宽高属性`width`和`height`将被设定为页面的尺寸，就是说不包括外面窗口框架的尺寸，默认值为 `false`.
+  * `center` Boolean - 在显示器中间打开窗口。
   * `minWidth` Integer - Window's minimum width. Default is `0`.
   * `minHeight` Integer - Window's minimum height. Default is `0`.
   * `maxWidth` Integer - Window's maximum width. Default is no limit.
@@ -53,21 +51,20 @@ win.show();
     on Linux. Default is `true`.
   * `alwaysOnTop` Boolean - Whether the window should always stay on top of
     other windows. Default is `false`.
-  * `fullscreen` Boolean - Whether the window should show in fullscreen. When
+  * `fullscreen` Boolean - 有没有全屏按钮.默认值为 `true`.Whether the window should show in fullscreen. When
     explicity set to `false` the fullscreen button will be hidden or disabled
     on OS X, or the maximize button will be disabled on Windows. Default is
     `false`.
-  * `fullscreenable` Boolean -有没有全屏按钮.默认值为 `true`.
+  * `fullscreenable` Boolean -Whether the maximize/zoom button on OS X should toggle full screen mode or maximize window. Default is true.
   * `skipTaskbar` Boolean - Whether to show the window in taskbar. Default is
     `false`.
-  * `kiosk` Boolean - 全屏模式. 默认值为 `false`.
-  * `title` String - Default window title. Default is `"Electron"`.
+  * `kiosk` Boolean - 进入全屏模式. 默认值为 `false`.
+  * `title` String - 窗口的默认标题。 默认值为 `"Electron"`.
   * `icon` [NativeImage](native-image.md) - 在dock 区域显示的图标。The window icon, when omitted on
     Windows the executable's icon would be used as window icon.
   * `show` Boolean - Whether window should be shown when created. Default is
     `true`.
-  * `frame` Boolean - Specify `false` to create a
-    [Frameless Window](frameless-window.md). Default is `true`.
+  * `frame` Boolean - 窗口外面是否有系统框架。设定为 `false` 时创建一个[Frameless Window](frameless-window.md). 默认值为 `true`.
   * `acceptFirstMouse` Boolean - Whether the web view accepts a single
     mouse-down event that simultaneously activates the window. Default is
     `false`.
