@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MutiScrollerSkin1" width="400" height="200" xmlns:e="http://ns.egret.com/eui">
+	<e:Scroller width="100%" height="100%" x="0" y="0" bounces="false" scrollPolicyV="off">
+		<e:Group>
+			<e:Scroller width="150" height="100%" x="27" y="40" scrollPolicyH="off"  bounces="true">
+                <e:List height="100%" width="150" x="0" y="0">
+                    <e:ArrayCollection>
+                        <e:Array>
+                            <e:Object label="数据1"/>
+                            <e:Object label="数据2"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                        </e:Array>
+                    </e:ArrayCollection>
+                </e:List>
+			</e:Scroller>
+			<e:Scroller width="150" height="100%" x="246" y="53" scrollPolicyH="off">
+                <e:List width="150" y="0" height="100%" x="0">
+                    <e:ArrayCollection>
+                        <e:Array>
+                            <e:Object label="数据1"/>
+                            <e:Object label="数据2"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                        </e:Array>
+                    </e:ArrayCollection>
+                </e:List>
+			</e:Scroller>
+			<e:Scroller width="150" height="100%" x="321" y="272" scrollPolicyH="off">
+                <e:List width="150" y="0" height="100%" x="0">
+                    <e:ArrayCollection>
+                        <e:Array>
+                            <e:Object label="数据1"/>
+                            <e:Object label="数据2"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                        </e:Array>
+                    </e:ArrayCollection>
+                </e:List>
+			</e:Scroller>
+			<e:Scroller width="150" height="100%" x="219" y="223" scrollPolicyH="off">
+                <e:List width="150" y="0" height="100%" x="0">
+                    <e:ArrayCollection>
+                        <e:Array>
+                            <e:Object label="数据1"/>
+                            <e:Object label="数据2"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                        </e:Array>
+                    </e:ArrayCollection>
+                </e:List>
+			</e:Scroller>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

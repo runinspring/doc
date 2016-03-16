@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MutiScrollerSkin2" width="200" height="600" xmlns:e="http://ns.egret.com/eui">
+	<e:Scroller width="100%" height="300" x="0" y="0" bounces="false" scrollPolicyH="off">
+		<e:Group>
+			<e:Scroller width="150" height="150" x="0" y="0" scrollPolicyH="off"  bounces="true">
+                <e:List height="100%" width="150" x="0" y="0">
+                    <e:ArrayCollection>
+                        <e:Array>
+                            <e:Object label="数据1"/>
+                            <e:Object label="数据2"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="数据3"/>
+                        </e:Array>
+                    </e:ArrayCollection>
+                </e:List>
+			</e:Scroller>
+			<e:Button  y="151"/>
+			<e:Scroller width="150" height="150" x="0" y="200" scrollPolicyH="off">
+                <e:List width="150"  height="100%">
+                    <e:ArrayCollection>
+                        <e:Array>
+                            <e:Object label="数据1"/>
+                            <e:Object label="数据2"/>
+                            <e:Object label="数据3"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                            <e:Object label="null"/>
+                        </e:Array>
+                    </e:ArrayCollection>
+                </e:List>
+			</e:Scroller>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>
