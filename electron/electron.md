@@ -1,15 +1,27 @@
-## ElectronDownload 增加淘宝镜像的方法
-electron-prebuilt/install.js
+## Electron 增加淘宝镜像的方法
+
+npm config set registry http://registry.cnpmjs.org 
 
 
-增加一个 mirror的option
+npm info underscore （如果上面配置正确这个命令会有字符串response）
 
+在 项目的package.json里增加mirror的属性
 
-var mirror = 'https://npm.taobao.org/mirrors/electron/'
+"package": "electron-packager ./ RuffHelper --all --out ~/Desktop/RuffHelper --mirror https://npm.taobao.org/mirrors/electron/ --version 0.37.3 --overwrite",
 
-
-// downloads if not cached
-download({version: version, mirror:mirror,platform: process.env.npm_config_platform, arch: process.env.npm_config_arch, strictSSL: process.env.npm_config_strict_ssl === 'true'}, extractFile)
+然后在
+electron-packager/index.js  第104行增加 mirror 的属性
+~~~
+combinations.push({
+        platform: platform,
+        arch: arch,
+        version: opts.version,
+        cache: opts.cache,
+        mirror: opts.mirror,
+        strictSSL: opts['strict-ssl']
+      })
+~~~
+这个已经给 electron-packager pull requests 了
 
 
 electron 官网
