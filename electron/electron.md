@@ -1,7 +1,13 @@
 ## ElectronDownload 增加淘宝镜像的方法
 electron-prebuilt/install.js
+
+
 增加一个 mirror的option
+
+
 var mirror = 'https://npm.taobao.org/mirrors/electron/'
+
+
 // downloads if not cached
 download({version: version, mirror:mirror,platform: process.env.npm_config_platform, arch: process.env.npm_config_arch, strictSSL: process.env.npm_config_strict_ssl === 'true'}, extractFile)
 
