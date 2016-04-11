@@ -1,6 +1,6 @@
 {
   "name": "Blog",
   "tagline": "写的一些文档教程",
-  "body": "# doc\r\n写的一些文档教程。主要是 Egret 和 EUI 的\r\n[老版本的lark教程](https://github.com/runinspring/blog/tree/master/lark_old)",
+  "body": "# doc\r\n写的一些文档教程。主要是 Egret 和 EUI 的\r\n[老版本的lark教程](https://github.com/runinspring/blog/tree/master/lark_old/README.md)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
