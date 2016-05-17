@@ -81,12 +81,14 @@ cacheFils1 里面是要缓存的文件列表，同样要以根域名为路径的
 * 如果一个页面是刚刚注册了service worker，那么它这一次不会被接管，到下一次刷新页面的时候，service worker才会生效。
 
 * 调试的时候最好 chrome 和 firefox 两个浏览器都开着，service worker 还有兼容性问题，有时候 chrome 出错了但没有提示，firefox 会有具体的提示。另外有的时候注释里有中文 firefox 会报错。
+* 目前 Service worker 的普及程度还不是很高，pc上只有 chrome 40+、 firefox 41+和 opera 27+ 支持。手机上ios不支持，安卓系统里只有qq浏览器测试成功
+
+安卓QQ浏览器的问题
+* 不支持 skipWaiting() 方法
+* 不支持最新的  serviceworker-cache-polyfill.js ，使用的还是15年4月份最早的版本。
 
 
-
-
-
-附件是全部的代码。worker4增加了一个小功能，在 id2.js 里会发送一个请求，serviceworker 里会拦截这个消息，返回一个自定义的值。
+附件swdemo.zip是示例代码。在 id2.js 里会发送一个请求，serviceworker 的 fetch 里会拦截这个消息，返回一个自定义的值。访问一次这个网页以后，关闭wifi，刷新页面还可以正常显示内容。
 
 
 
