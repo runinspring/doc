@@ -17,18 +17,10 @@ MongoClient.connect(url, function (err, db) {
     assert.equal(null, err);
     console.log("Connected successfully to server");
     //插入一个数据
-    insertData(db)
-    db.find(data).toArray(function (err, result) {
-        // db.close();
-        if (err) {
-            console.log('Err:' + err);
-            callback(null);
-        } else {
-            callback(result);
-        }
-    })
+    insertData(db);
+    findData(db);
     
-    db.close();
+    //db.close(); 应该写在结束了所有操作数据的最后面
 });
 //插入数据
 function insertData(db){
