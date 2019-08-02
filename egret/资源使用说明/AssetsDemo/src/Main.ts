@@ -33,18 +33,7 @@ class Main extends eui.UILayer {
     protected createChildren(): void {
         super.createChildren();
 
-        egret.lifecycle.addLifecycleListener((context) => {
-            // custom lifecycle plugin
-        })
-
-        egret.lifecycle.onPause = () => {
-            egret.ticker.pause();
-        }
-
-        egret.lifecycle.onResume = () => {
-            egret.ticker.resume();
-        }
-
+        egret.ImageLoader.crossOrigin = 'anonymous';
         //inject the custom material parser
         //注入自定义的素材解析器
         let assetAdapter = new AssetAdapter();
@@ -73,8 +62,11 @@ class Main extends eui.UILayer {
             const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
             await RES.loadConfig("resource/default.res.json", "resource/");
+            await RES.loadConfig("baidu.res.json", "https://microclient.egret-labs.org/test/resource/");
+
             await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
+            await RES.loadGroup("ui", 0, loadingView);
             this.stage.removeChild(loadingView);
         }
         catch (e) {
