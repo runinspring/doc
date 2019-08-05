@@ -271,6 +271,7 @@ var Main = (function (_super) {
      * Create scene interface
      */
     Main.prototype.createGameScene = function () {
+        var _this = this;
         var sky = this.createBitmapByName("bg_jpg");
         this.addChild(sky);
         var stageW = this.stage.stageWidth;
@@ -320,6 +321,19 @@ var Main = (function (_super) {
         button.verticalCenter = 0;
         this.addChild(button);
         button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+        var assURL = "http://microclient.egret-labs.org/test/resource/art/about/about.png";
+        var image = new Image();
+        image.crossOrigin = "anonymous";
+        image.onload = function () {
+            var texture = new egret.Texture();
+            texture.bitmapData = new egret.BitmapData(image);
+            var bmp = new egret.Bitmap(texture);
+            bmp.x = 300;
+            bmp.y = 300;
+            //创建 Bitmap 进行显示
+            _this.addChild(bmp);
+        };
+        image.src = assURL;
     };
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。

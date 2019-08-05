@@ -148,6 +148,23 @@ class Main extends eui.UILayer {
         button.verticalCenter = 0;
         this.addChild(button);
         button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+
+        let assURL = "http://microclient.egret-labs.org/test/resource/art/about/about.png"
+        let image = new Image();
+        image.crossOrigin = "anonymous"
+        image.onload = () => {
+
+            let texture = new egret.Texture();
+            texture.bitmapData = new egret.BitmapData(image)
+            let bmp = new egret.Bitmap(texture);
+
+            bmp.x = 300;
+            bmp.y = 300;
+            //创建 Bitmap 进行显示
+            this.addChild(bmp);
+
+        }
+        image.src = assURL;
     }
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。

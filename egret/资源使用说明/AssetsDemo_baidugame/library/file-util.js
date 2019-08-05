@@ -1,5 +1,5 @@
 /**
- * 封装微信小游戏的文件系统
+ * 封小游戏的文件系统
  */
 const wxFs = swan.getFileSystemManager();
 const WX_ROOT = swan.env.USER_DATA_PATH + "/";
@@ -195,7 +195,7 @@ export const path = {
         }
         return path.normailze(p);
     },
-    // 获取微信的用户缓存地址
+    // 获取用户缓存地址
     getWxUserPath: (p) => {
         return WX_ROOT + p;
     },
